@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chase Game</title>
+  <style>
+    body {
+      background-color: #e0e0e0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    canvas {
+      border: 2px solid #333;
+      background-color: #ffffff;
+      display: block;
+      margin: 20px auto;
+    }
+    #hud {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="hud">
+    ⏱ Survival Time: <span id="timer">0.0</span> s |
+    🏆 High Score: <span id="highScore">0.0</span> s
+  </div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <button onclick="resetHighScore()">🔄 Reset High Score</button>
+  <script src="game.js"></script>
+</body>
+</html>
